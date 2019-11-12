@@ -1,0 +1,35 @@
+.goUp {
+  animation-name: expand;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.goDown {
+  animation-name: shrink;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes expand {
+  from {
+    height: 50px;
+  }
+  to {
+    height: 50%;
+  }
+}
+@keyframes shrink {
+  from {
+    height: 50%;
+  }
+  to {
+    height: 50px;
+  }
+}
+
+.turnUp {
+  transition: 1s linear;
+  transform: rotate(0deg);
+}
+.turnDown {
+  transition: 1s linear;
+  transform: rotate(180deg);
+}
