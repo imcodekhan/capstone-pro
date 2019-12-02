@@ -100,8 +100,8 @@ class Admin extends Component {
               align="center"
               onClick={() => {
                 if (
-                  this.state.username === "pankajbaleshwar1998@gmail.com" &&
-                  this.state.password === "Capstone"
+                  this.state.username === "p" &&
+                  this.state.password === "C"
                 ) {
                   this.setState({ check: true });
                 } else {

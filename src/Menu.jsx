@@ -16,7 +16,7 @@ class Menu extends Component {
 
     this.state = {
       shop: shop,
-      selectedblock: "Bh1",
+      selectedblock: "BH-1",
       selectedshop: "Cocina",
       selectedDish: "",
       order: [],
@@ -66,7 +66,7 @@ class Menu extends Component {
       }
     });
     this.setState({ selectedshop: shop[0].name });
-    console.log(shop[0].name);
+    // console.log(shop[0].name);
   };
 
   handleShop = event => {
@@ -81,10 +81,10 @@ class Menu extends Component {
       order: this.state.order,
       total: this.state.total
     });
-    console.log(oid);
+    // console.log(oid);
     this.setState({
       shop: shop,
-      selectedblock: "Bh1",
+      selectedblock: "BH-1",
       selectedshop: "Cocina",
       order: [],
       total: 0,
@@ -147,12 +147,12 @@ class Menu extends Component {
                 className="custom-select"
                 id="inputGroupSelect01"
               >
-                <option value="Bh1" selected>
-                  Bh1
+                <option value="BH-1" selected>
+                  BH-1
                 </option>
-                <option value="Bh4">Bh4</option>
-                <option value="Cse Block">Cse Block</option>
-                <option value="Campus Cafe">Campus Cafe</option>
+                <option value="BH-2">BH-2</option>
+                <option value="CSE BLOCK">CSE BLOCK</option>
+                <option value="CAMPUS CAFE">CAMPUS CAFE</option>
               </select>
             </div>
 
@@ -218,7 +218,7 @@ class Menu extends Component {
                   this.state.selectedDish === "" ? "none" : "inline-block"
               }}
             >
-              total:
+              Total:
               {this.state.total}
             </div>
           </div>
